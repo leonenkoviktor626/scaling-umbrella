@@ -1,0 +1,12 @@
+        case .changeBlur(let blur):
+            newShape.blur = blur
+            
+        case .changeAdjustments(let adjustments):
+            newShape.adjustments = adjustments
+        var newMedia = media
+        newMedia?.videoSettings = settings
+        
+        return newMedia
+    }
+    
+}
